@@ -1,0 +1,171 @@
+name: Alamofire, nameSpecified: 
+body: Copyright (c) 2014-2…
+version: 5.9.1
+
+name: BlueCryptor, nameSpecified: 
+body:                     …
+version: 1.0.32
+
+name: BlueECC, nameSpecified: 
+body:                     …
+version: 1.2.5
+
+name: BlueRSA, nameSpecified: 
+body:                     …
+version: 1.0.200
+
+name: Differentiator, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 5.0.0
+
+name: KakaoSDKAuth, nameSpecified: 
+body:                     …
+version: 2.22.7
+
+name: KakaoSDKCommon, nameSpecified: 
+body:                     …
+version: 2.22.7
+
+name: KakaoSDKUser, nameSpecified: 
+body:                     …
+version: 2.22.7
+
+name: Kingfisher, nameSpecified: 
+body: The MIT License (MIT…
+version: 8.1.3
+
+name: KituraContracts, nameSpecified: 
+body:                     …
+version: 1.2.1
+
+name: LoggerAPI, nameSpecified: 
+body: 
+                   …
+version: 1.9.200
+
+name: Logging, nameSpecified: 
+body: 
+                   …
+version: 1.4.0
+
+name: lottie-ios, nameSpecified: 
+body:                     …
+version: 4.5.1
+
+name: naveridlogin-sdk-ios, nameSpecified: 
+body:                     …
+version: 4.2.3
+
+name: NMapsGeometry, nameSpecified: 
+body: Copyright © 2024 NAV…
+version: 1.0.2
+
+name: NMapsMap, nameSpecified: 
+body: Copyright © 2018 NAV…
+version: 3.20.0
+
+name: Realm, nameSpecified: 
+body:                     …
+version: 20.0.1
+
+name: RealmSwift, nameSpecified: 
+body:                     …
+version: 20.0.1
+
+name: RxAlamofire, nameSpecified: 
+body: The MIT License (MIT…
+version: 6.1.1
+
+name: RxCocoa, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.8.0
+
+name: RxDataSources, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 5.0.0
+
+name: RxKakaoSDKAuth, nameSpecified: 
+body:                     …
+version: 2.22.7
+
+name: RxKakaoSDKCommon, nameSpecified: 
+body:                     …
+version: 2.22.7
+
+name: RxKakaoSDKUser, nameSpecified: 
+body:                     …
+version: 2.22.7
+
+name: RxRelay, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.8.0
+
+name: RxSwift, nameSpecified: 
+body: **The MIT License**
+…
+version: 6.8.0
+
+name: SideMenu, nameSpecified: 
+body: Copyright (c) 2015 J…
+version: 6.5.0
+
+name: SwiftJWT, nameSpecified: 
+body: 
+                   …
+version: 3.6.200
+
+name: abseil-cpp-binary, nameSpecified: abseil, owner: google, version: 1.2024011602.0, source: https://github.com/google/abseil-cpp-binary
+
+name: app-check, nameSpecified: AppCheck, owner: google, version: 11.0.1, source: https://github.com/google/app-check
+
+name: AppAuth-iOS, nameSpecified: AppAuth, owner: openid, version: 1.7.5, source: https://github.com/openid/AppAuth-iOS
+
+name: BigInt, nameSpecified: BigInt, owner: attaswift, version: 5.5.1, source: https://github.com/attaswift/BigInt
+
+name: CryptoSwift, nameSpecified: CryptoSwift, owner: krzyzanowskim, version: 1.3.2, source: https://github.com/krzyzanowskim/CryptoSwift
+
+name: firebase-ios-sdk, nameSpecified: Firebase, owner: firebase, version: 11.4.0, source: https://github.com/firebase/firebase-ios-sdk
+
+name: google-auth-library-swift, nameSpecified: Auth, owner: googleapis, version: 0.5.3, source: https://github.com/googleapis/google-auth-library-swift
+
+name: GoogleAppMeasurement, nameSpecified: GoogleAppMeasurement, owner: google, version: 11.4.0, source: https://github.com/google/GoogleAppMeasurement
+
+name: GoogleDataTransport, nameSpecified: GoogleDataTransport, owner: google, version: 10.1.0, source: https://github.com/google/GoogleDataTransport
+
+name: GoogleSignIn-iOS, nameSpecified: GoogleSignIn, owner: google, version: 8.0.0, source: https://github.com/google/GoogleSignIn-iOS
+
+name: GoogleUtilities, nameSpecified: GoogleUtilities, owner: google, version: 8.0.2, source: https://github.com/google/GoogleUtilities
+
+name: grpc-binary, nameSpecified: gRPC, owner: google, version: 1.65.1, source: https://github.com/google/grpc-binary
+
+name: gtm-session-fetcher, nameSpecified: gtm-session-fetcher, owner: google, version: 3.5.0, source: https://github.com/google/gtm-session-fetcher
+
+name: GTMAppAuth, nameSpecified: GTMAppAuth, owner: google, version: 4.1.1, source: https://github.com/google/GTMAppAuth
+
+name: interop-ios-for-google-sdks, nameSpecified: InteropForGoogle, owner: google, version: 100.0.0, source: https://github.com/google/interop-ios-for-google-sdks
+
+name: leveldb, nameSpecified: leveldb, owner: firebase, version: 1.22.5, source: https://github.com/firebase/leveldb
+
+name: nanopb, nameSpecified: nanopb, owner: firebase, version: 2.30910.0, source: https://github.com/firebase/nanopb
+
+name: promises, nameSpecified: Promises, owner: google, version: 2.4.0, source: https://github.com/google/promises
+
+name: swift-atomics, nameSpecified: swift-atomics, owner: apple, version: 1.2.0, source: https://github.com/apple/swift-atomics
+
+name: swift-collections, nameSpecified: swift-collections, owner: apple, version: 1.1.4, source: https://github.com/apple/swift-collections
+
+name: swift-nio, nameSpecified: swift-nio, owner: apple, version: 2.77.0, source: https://github.com/apple/swift-nio
+
+name: swift-protobuf, nameSpecified: SwiftProtobuf, owner: apple, version: 1.28.1, source: https://github.com/apple/swift-protobuf
+
+name: swift-system, nameSpecified: swift-system, owner: apple, version: 1.4.0, source: https://github.com/apple/swift-system
+
+add-version-numbers: true
+
+LicensePlist Version: 3.25.1

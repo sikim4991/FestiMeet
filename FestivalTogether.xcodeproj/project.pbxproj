@@ -1,0 +1,1084 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B19CBDB2ED5675AB0DDDFB0 /* Pods_FestivalTogether.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4F067E4E2F129D79219B9D /* Pods_FestivalTogether.framework */; };
+		FF03DE362C959DEB000F6E60 /* Extension_UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF03DE352C959DEB000F6E60 /* Extension_UIImage.swift */; };
+		FF03DE382C95A1B7000F6E60 /* Extension_UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF03DE372C95A1B7000F6E60 /* Extension_UIColor.swift */; };
+		FF05CDF52D2F23D200C3806E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05CDF42D2F23D200C3806E /* NotificationViewController.swift */; };
+		FF05CDF72D2F251B00C3806E /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05CDF62D2F251B00C3806E /* NotificationTableViewCell.swift */; };
+		FF05CDF92D2F4A1C00C3806E /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF05CDF82D2F4A1C00C3806E /* NotificationViewModel.swift */; };
+		FF1A65612CC03DBC00B0B789 /* CommunityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A65602CC03DBC00B0B789 /* CommunityDetailViewModel.swift */; };
+		FF1A65632CC0EC7D00B0B789 /* ReplyCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1A65622CC0EC7D00B0B789 /* ReplyCollectionReusableView.swift */; };
+		FF321DB52CBE31800079A388 /* ReplyCommentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF321DB42CBE31800079A388 /* ReplyCommentCollectionViewCell.swift */; };
+		FF321DB72CBED0B80079A388 /* NicknameSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF321DB62CBED0B80079A388 /* NicknameSettingViewController.swift */; };
+		FF321DB92CBEED580079A388 /* NicknameSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF321DB82CBEED580079A388 /* NicknameSettingViewModel.swift */; };
+		FF325A832CD49C4800CB89DF /* ChattingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF325A822CD49C4800CB89DF /* ChattingListViewModel.swift */; };
+		FF35A3142D2DB6A20007EC21 /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF35A3132D2DB6A20007EC21 /* UserNotification.swift */; };
+		FF4068642CC8FC3600A28CE5 /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4068632CC8FC3600A28CE5 /* MyPageViewModel.swift */; };
+		FF4CBC0B2CA5C53400D55A60 /* FestivalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4CBC0A2CA5C53400D55A60 /* FestivalListViewController.swift */; };
+		FF59A7C62CCB7A7900D30E22 /* FirebaseStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59A7C52CCB7A7900D30E22 /* FirebaseStorageService.swift */; };
+		FF59A7C82CCB7F2900D30E22 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FF59A7C72CCB7F2900D30E22 /* FirebaseStorage */; };
+		FF59A7CD2CCB864400D30E22 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FF59A7CC2CCB864400D30E22 /* FirebaseAuth */; };
+		FF59A7CF2CCB864400D30E22 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FF59A7CE2CCB864400D30E22 /* FirebaseCore */; };
+		FF59A7D12CCB864400D30E22 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FF59A7D02CCB864400D30E22 /* FirebaseFirestore */; };
+		FF59A7D32CCB864400D30E22 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FF59A7D22CCB864400D30E22 /* FirebaseStorage */; };
+		FF59A7D52CCBCA1B00D30E22 /* MyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59A7D42CCBCA1B00D30E22 /* MyPostViewController.swift */; };
+		FF59A7D72CCBCFC100D30E22 /* MyPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59A7D62CCBCFC100D30E22 /* MyPostViewModel.swift */; };
+		FF59A7D92CCBEDC100D30E22 /* MyReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59A7D82CCBEDC100D30E22 /* MyReplyViewController.swift */; };
+		FF59A7DB2CCBF10300D30E22 /* MyReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59A7DA2CCBF10300D30E22 /* MyReplyTableViewCell.swift */; };
+		FF59A7DD2CCBF8FE00D30E22 /* MyReplyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF59A7DC2CCBF8FE00D30E22 /* MyReplyViewModel.swift */; };
+		FF5DF0FA2CB3AD69004153DA /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF0F92CB3AD69004153DA /* CommunityViewController.swift */; };
+		FF5DF0FC2CB3AF5D004153DA /* ChattingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF0FB2CB3AF5D004153DA /* ChattingListViewController.swift */; };
+		FF5DF0FE2CB3AFCE004153DA /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF0FD2CB3AFCE004153DA /* MyPageViewController.swift */; };
+		FF5DF1002CB3D531004153DA /* CommunityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF0FF2CB3D531004153DA /* CommunityTableViewCell.swift */; };
+		FF5DF1022CB40EE3004153DA /* CommunityWritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5DF1012CB40EE3004153DA /* CommunityWritingViewController.swift */; };
+		FF6074332D15DC6100044452 /* OAuth2 in Frameworks */ = {isa = PBXBuildFile; productRef = FF6074322D15DC6100044452 /* OAuth2 */; };
+		FF6074362D16ECE400044452 /* ServiceAccount.json in Resources */ = {isa = PBXBuildFile; fileRef = FF6074352D16ECE400044452 /* ServiceAccount.json */; };
+		FF6074382D17067000044452 /* FirebaseCloudMessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6074372D17067000044452 /* FirebaseCloudMessagingService.swift */; };
+		FF63947E2CD8F2A400BC2EF4 /* ChattingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63947D2CD8F2A400BC2EF4 /* ChattingViewController.swift */; };
+		FF6394802CD8FACC00BC2EF4 /* ChattingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF63947F2CD8FACC00BC2EF4 /* ChattingTableViewCell.swift */; };
+		FF6481A62CB64411005C9363 /* CommunityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481A52CB64411005C9363 /* CommunityViewModel.swift */; };
+		FF6481A82CB64BAA005C9363 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481A72CB64BAA005C9363 /* User.swift */; };
+		FF6481AA2CB65346005C9363 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481A92CB65346005C9363 /* Post.swift */; };
+		FF6481AC2CB655E1005C9363 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481AB2CB655E1005C9363 /* Reply.swift */; };
+		FF6481AE2CB660CB005C9363 /* ReplyComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481AD2CB660CB005C9363 /* ReplyComment.swift */; };
+		FF6481B02CB6B115005C9363 /* FirebaseFirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481AF2CB6B115005C9363 /* FirebaseFirestoreService.swift */; };
+		FF6481B22CB7A2AA005C9363 /* CommunityWritingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6481B12CB7A2AA005C9363 /* CommunityWritingViewModel.swift */; };
+		FF6E39542CAEC3510031213B /* FestivalSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E39532CAEC3510031213B /* FestivalSearchResultViewModel.swift */; };
+		FF6E39562CAF0A990031213B /* Extension_String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E39552CAF0A990031213B /* Extension_String.swift */; };
+		FF6E39582CAFA2920031213B /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E39572CAFA2920031213B /* ImageDetailViewController.swift */; };
+		FF6E395A2CAFA2C80031213B /* ImageDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6E39592CAFA2C80031213B /* ImageDetailCollectionViewCell.swift */; };
+		FF6F50742CAD6A2B00626A2A /* FestivalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F50732CAD6A2B00626A2A /* FestivalSearchViewController.swift */; };
+		FF6F50762CAD981100626A2A /* FestivalSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F50752CAD981100626A2A /* FestivalSearchResultViewController.swift */; };
+		FF6F50782CAD9DB500626A2A /* FestivalSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F50772CAD9DB500626A2A /* FestivalSearchTableViewCell.swift */; };
+		FF6F507A2CADA58300626A2A /* FestivalSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6F50792CADA58300626A2A /* FestivalSearchViewModel.swift */; };
+		FF72A39B2CA15E5100AD46EC /* FestivalJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A39A2CA15E5100AD46EC /* FestivalJSON.swift */; };
+		FF72A39D2CA1648300AD46EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A39C2CA1648300AD46EC /* HomeViewController.swift */; };
+		FF72A39F2CA1659F00AD46EC /* NaverSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A39E2CA1659F00AD46EC /* NaverSignIn.swift */; };
+		FF72A3A12CA1667E00AD46EC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A3A02CA1667E00AD46EC /* HomeViewModel.swift */; };
+		FF72A3A32CA1B1C100AD46EC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF72A3A22CA1B1C100AD46EC /* TabBarController.swift */; };
+		FF852B982CA414E400F4B8D7 /* Extension_UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF852B972CA414E400F4B8D7 /* Extension_UIFont.swift */; };
+		FF852B9D2CA42C1900F4B8D7 /* NanumSquareRoundOTFEB.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF852B9A2CA42C1900F4B8D7 /* NanumSquareRoundOTFEB.otf */; };
+		FF852B9E2CA42C1900F4B8D7 /* NanumSquareRoundOTFB.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF852B992CA42C1900F4B8D7 /* NanumSquareRoundOTFB.otf */; };
+		FF852B9F2CA42C1900F4B8D7 /* NanumSquareRoundOTFL.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF852B9B2CA42C1900F4B8D7 /* NanumSquareRoundOTFL.otf */; };
+		FF852BA02CA42C1900F4B8D7 /* NanumSquareRoundOTFR.otf in Resources */ = {isa = PBXBuildFile; fileRef = FF852B9C2CA42C1900F4B8D7 /* NanumSquareRoundOTFR.otf */; };
+		FF88F86A2D469667003AE404 /* APIKeys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = FF88F8692D469667003AE404 /* APIKeys.xcconfig */; };
+		FF88F86C2D46A300003AE404 /* FestivalSeviceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF88F86B2D46A2FC003AE404 /* FestivalSeviceKey.swift */; };
+		FF9830AE2CC4D89D00F34850 /* Extension_UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9830AD2CC4D89D00F34850 /* Extension_UIViewController.swift */; };
+		FF99079C2CAA826700EF185D /* AreaCodeJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99079B2CAA826700EF185D /* AreaCodeJSON.swift */; };
+		FF9907A02CAA853500EF185D /* AreaCodeAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF99079F2CAA853500EF185D /* AreaCodeAPIService.swift */; };
+		FF9907A22CAAD00300EF185D /* FestivalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9907A12CAAD00300EF185D /* FestivalDetailViewController.swift */; };
+		FF9C937C2CD36AD3007A1E2C /* Chatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C937B2CD36AD3007A1E2C /* Chatting.swift */; };
+		FF9C937E2CD3CEB9007A1E2C /* ChattingListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C937D2CD3CEB9007A1E2C /* ChattingListTableViewCell.swift */; };
+		FFA1EB442D3319980060DA91 /* fireworksAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = FFA1EB432D3319980060DA91 /* fireworksAnimation.json */; };
+		FFA1EB462D33220C0060DA91 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1EB452D33220C0060DA91 /* LaunchScreenViewController.swift */; };
+		FFA1EB482D3373DB0060DA91 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FFA1EB472D3373DB0060DA91 /* Settings.bundle */; };
+		FFAAEAF32CC7C729004248E2 /* CommunitySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAAEAF22CC7C729004248E2 /* CommunitySearchViewController.swift */; };
+		FFAAEAF52CC7C8D2004248E2 /* CommunitySearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAAEAF42CC7C8D2004248E2 /* CommunitySearchResultViewModel.swift */; };
+		FFAAEAF72CC7F5C1004248E2 /* CommunitySearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAAEAF62CC7F5C1004248E2 /* CommunitySearchResultViewController.swift */; };
+		FFC110872D361D6800581552 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFC110862D361D6800581552 /* GoogleService-Info.plist */; };
+		FFC49C212CA6CC8B009D8683 /* FestivalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC49C202CA6CC8B009D8683 /* FestivalTableViewCell.swift */; };
+		FFC49C242CA7265C009D8683 /* FestivalAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC49C232CA7265C009D8683 /* FestivalAPIService.swift */; };
+		FFC49C262CA73952009D8683 /* FestivalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC49C252CA73952009D8683 /* FestivalListViewModel.swift */; };
+		FFCF9CE32CC2E56F0015CBE0 /* PostCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF9CE22CC2E56F0015CBE0 /* PostCollectionReusableView.swift */; };
+		FFCF9CE52CC2EA2D0015CBE0 /* ReplyCountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF9CE42CC2EA2D0015CBE0 /* ReplyCountCollectionViewCell.swift */; };
+		FFDA43AE2CE8A238008AED83 /* ChattingSideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA43AD2CE8A238008AED83 /* ChattingSideMenuViewController.swift */; };
+		FFDA43B02CE8A423008AED83 /* ChattingSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA43AF2CE8A423008AED83 /* ChattingSideMenuNavigationController.swift */; };
+		FFDA43B22CE8DB04008AED83 /* ChattingSideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDA43B12CE8DB04008AED83 /* ChattingSideMenuTableViewCell.swift */; };
+		FFDAE0862D1301DE00225070 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FFDAE0852D1301DE00225070 /* FirebaseMessaging */; };
+		FFE1D4642C8F0E6100A8F4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1D4632C8F0E6100A8F4AA /* AppDelegate.swift */; };
+		FFE1D4662C8F0E6100A8F4AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1D4652C8F0E6100A8F4AA /* SceneDelegate.swift */; };
+		FFE1D4682C8F0E6100A8F4AA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1D4672C8F0E6100A8F4AA /* SignInViewController.swift */; };
+		FFE1D46D2C8F0E6200A8F4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE1D46C2C8F0E6200A8F4AA /* Assets.xcassets */; };
+		FFE1D4702C8F0E6200A8F4AA /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FFE1D46F2C8F0E6200A8F4AA /* Base */; };
+		FFE1D4862C8F20EF00A8F4AA /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1D4852C8F20EF00A8F4AA /* SignInViewModel.swift */; };
+		FFE1D48B2C8F235700A8F4AA /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = FFE1D48A2C8F235700A8F4AA /* GoogleSignIn */; };
+		FFE1D48D2C8F235700A8F4AA /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FFE1D48C2C8F235700A8F4AA /* GoogleSignInSwift */; };
+		FFE8BF462CABFD9D007F3BE9 /* FestivalDetailImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF452CABFD9D007F3BE9 /* FestivalDetailImageCollectionViewCell.swift */; };
+		FFE8BF482CAC0495007F3BE9 /* FestivalDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF472CAC0495007F3BE9 /* FestivalDetailViewModel.swift */; };
+		FFE8BF4A2CAC05CE007F3BE9 /* FestivalImageAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF492CAC05CE007F3BE9 /* FestivalImageAPIService.swift */; };
+		FFE8BF4C2CAC0909007F3BE9 /* FestivalImageJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF4B2CAC0909007F3BE9 /* FestivalImageJSON.swift */; };
+		FFE8BF502CAC62AF007F3BE9 /* FestivalDetailAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF4F2CAC62AF007F3BE9 /* FestivalDetailAPIService.swift */; };
+		FFE8BF522CAC64F2007F3BE9 /* FestivalDetailJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF512CAC64F2007F3BE9 /* FestivalDetailJSON.swift */; };
+		FFE8BF542CAC70CF007F3BE9 /* FestivalIntroAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF532CAC70CF007F3BE9 /* FestivalIntroAPIService.swift */; };
+		FFE8BF562CAC717E007F3BE9 /* FestivalIntroJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF552CAC717E007F3BE9 /* FestivalIntroJSON.swift */; };
+		FFE8BF582CAC85E0007F3BE9 /* Extension_UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE8BF572CAC85E0007F3BE9 /* Extension_UILabel.swift */; };
+		FFF2EE912CB956E2009BDBC9 /* CommunityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2EE902CB956E2009BDBC9 /* CommunityDetailViewController.swift */; };
+		FFFD36DC2CDA349F00801BC2 /* ChattingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFD36DB2CDA349F00801BC2 /* ChattingViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B4F067E4E2F129D79219B9D /* Pods_FestivalTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FestivalTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8521E33D42D9B338BD29D5 /* Pods-FestivalTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FestivalTogether.release.xcconfig"; path = "Target Support Files/Pods-FestivalTogether/Pods-FestivalTogether.release.xcconfig"; sourceTree = "<group>"; };
+		EB2057E39310F5C4718A4740 /* Pods-FestivalTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FestivalTogether.debug.xcconfig"; path = "Target Support Files/Pods-FestivalTogether/Pods-FestivalTogether.debug.xcconfig"; sourceTree = "<group>"; };
+		FF03DE352C959DEB000F6E60 /* Extension_UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIImage.swift; sourceTree = "<group>"; };
+		FF03DE372C95A1B7000F6E60 /* Extension_UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIColor.swift; sourceTree = "<group>"; };
+		FF05CDF42D2F23D200C3806E /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		FF05CDF62D2F251B00C3806E /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		FF05CDF82D2F4A1C00C3806E /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		FF1A65602CC03DBC00B0B789 /* CommunityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailViewModel.swift; sourceTree = "<group>"; };
+		FF1A65622CC0EC7D00B0B789 /* ReplyCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCollectionReusableView.swift; sourceTree = "<group>"; };
+		FF321DB42CBE31800079A388 /* ReplyCommentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCommentCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF321DB62CBED0B80079A388 /* NicknameSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingViewController.swift; sourceTree = "<group>"; };
+		FF321DB82CBEED580079A388 /* NicknameSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameSettingViewModel.swift; sourceTree = "<group>"; };
+		FF325A822CD49C4800CB89DF /* ChattingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListViewModel.swift; sourceTree = "<group>"; };
+		FF35A3132D2DB6A20007EC21 /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
+		FF4068632CC8FC3600A28CE5 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		FF4CBC0A2CA5C53400D55A60 /* FestivalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalListViewController.swift; sourceTree = "<group>"; };
+		FF59A7C52CCB7A7900D30E22 /* FirebaseStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageService.swift; sourceTree = "<group>"; };
+		FF59A7D42CCBCA1B00D30E22 /* MyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostViewController.swift; sourceTree = "<group>"; };
+		FF59A7D62CCBCFC100D30E22 /* MyPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostViewModel.swift; sourceTree = "<group>"; };
+		FF59A7D82CCBEDC100D30E22 /* MyReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReplyViewController.swift; sourceTree = "<group>"; };
+		FF59A7DA2CCBF10300D30E22 /* MyReplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReplyTableViewCell.swift; sourceTree = "<group>"; };
+		FF59A7DC2CCBF8FE00D30E22 /* MyReplyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyReplyViewModel.swift; sourceTree = "<group>"; };
+		FF5DF0F92CB3AD69004153DA /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		FF5DF0FB2CB3AF5D004153DA /* ChattingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListViewController.swift; sourceTree = "<group>"; };
+		FF5DF0FD2CB3AFCE004153DA /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		FF5DF0FF2CB3D531004153DA /* CommunityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityTableViewCell.swift; sourceTree = "<group>"; };
+		FF5DF1012CB40EE3004153DA /* CommunityWritingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityWritingViewController.swift; sourceTree = "<group>"; };
+		FF6074352D16ECE400044452 /* ServiceAccount.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ServiceAccount.json; sourceTree = "<group>"; };
+		FF6074372D17067000044452 /* FirebaseCloudMessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCloudMessagingService.swift; sourceTree = "<group>"; };
+		FF63947D2CD8F2A400BC2EF4 /* ChattingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewController.swift; sourceTree = "<group>"; };
+		FF63947F2CD8FACC00BC2EF4 /* ChattingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingTableViewCell.swift; sourceTree = "<group>"; };
+		FF6481A52CB64411005C9363 /* CommunityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewModel.swift; sourceTree = "<group>"; };
+		FF6481A72CB64BAA005C9363 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FF6481A92CB65346005C9363 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FF6481AB2CB655E1005C9363 /* Reply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
+		FF6481AD2CB660CB005C9363 /* ReplyComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyComment.swift; sourceTree = "<group>"; };
+		FF6481AF2CB6B115005C9363 /* FirebaseFirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreService.swift; sourceTree = "<group>"; };
+		FF6481B12CB7A2AA005C9363 /* CommunityWritingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityWritingViewModel.swift; sourceTree = "<group>"; };
+		FF6E39532CAEC3510031213B /* FestivalSearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalSearchResultViewModel.swift; sourceTree = "<group>"; };
+		FF6E39552CAF0A990031213B /* Extension_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_String.swift; sourceTree = "<group>"; };
+		FF6E39572CAFA2920031213B /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		FF6E39592CAFA2C80031213B /* ImageDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		FF6F50732CAD6A2B00626A2A /* FestivalSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalSearchViewController.swift; sourceTree = "<group>"; };
+		FF6F50752CAD981100626A2A /* FestivalSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalSearchResultViewController.swift; sourceTree = "<group>"; };
+		FF6F50772CAD9DB500626A2A /* FestivalSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalSearchTableViewCell.swift; sourceTree = "<group>"; };
+		FF6F50792CADA58300626A2A /* FestivalSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalSearchViewModel.swift; sourceTree = "<group>"; };
+		FF72A39A2CA15E5100AD46EC /* FestivalJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalJSON.swift; sourceTree = "<group>"; };
+		FF72A39C2CA1648300AD46EC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF72A39E2CA1659F00AD46EC /* NaverSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverSignIn.swift; sourceTree = "<group>"; };
+		FF72A3A02CA1667E00AD46EC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FF72A3A22CA1B1C100AD46EC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		FF852B972CA414E400F4B8D7 /* Extension_UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIFont.swift; sourceTree = "<group>"; };
+		FF852B992CA42C1900F4B8D7 /* NanumSquareRoundOTFB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFB.otf; sourceTree = "<group>"; };
+		FF852B9A2CA42C1900F4B8D7 /* NanumSquareRoundOTFEB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFEB.otf; sourceTree = "<group>"; };
+		FF852B9B2CA42C1900F4B8D7 /* NanumSquareRoundOTFL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFL.otf; sourceTree = "<group>"; };
+		FF852B9C2CA42C1900F4B8D7 /* NanumSquareRoundOTFR.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumSquareRoundOTFR.otf; sourceTree = "<group>"; };
+		FF88F8692D469667003AE404 /* APIKeys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = APIKeys.xcconfig; sourceTree = "<group>"; };
+		FF88F86B2D46A2FC003AE404 /* FestivalSeviceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalSeviceKey.swift; sourceTree = "<group>"; };
+		FF9830AD2CC4D89D00F34850 /* Extension_UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIViewController.swift; sourceTree = "<group>"; };
+		FF99079B2CAA826700EF185D /* AreaCodeJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCodeJSON.swift; sourceTree = "<group>"; };
+		FF99079F2CAA853500EF185D /* AreaCodeAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCodeAPIService.swift; sourceTree = "<group>"; };
+		FF9907A12CAAD00300EF185D /* FestivalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailViewController.swift; sourceTree = "<group>"; };
+		FF9C937B2CD36AD3007A1E2C /* Chatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chatting.swift; sourceTree = "<group>"; };
+		FF9C937D2CD3CEB9007A1E2C /* ChattingListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingListTableViewCell.swift; sourceTree = "<group>"; };
+		FFA1EB432D3319980060DA91 /* fireworksAnimation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fireworksAnimation.json; sourceTree = "<group>"; };
+		FFA1EB452D33220C0060DA91 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		FFA1EB472D3373DB0060DA91 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		FFA4C7722C94C439001C53A3 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FFAAEAF22CC7C729004248E2 /* CommunitySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySearchViewController.swift; sourceTree = "<group>"; };
+		FFAAEAF42CC7C8D2004248E2 /* CommunitySearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySearchResultViewModel.swift; sourceTree = "<group>"; };
+		FFAAEAF62CC7F5C1004248E2 /* CommunitySearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySearchResultViewController.swift; sourceTree = "<group>"; };
+		FFC110862D361D6800581552 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FFC49C202CA6CC8B009D8683 /* FestivalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalTableViewCell.swift; sourceTree = "<group>"; };
+		FFC49C232CA7265C009D8683 /* FestivalAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalAPIService.swift; sourceTree = "<group>"; };
+		FFC49C252CA73952009D8683 /* FestivalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalListViewModel.swift; sourceTree = "<group>"; };
+		FFCF9CE22CC2E56F0015CBE0 /* PostCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionReusableView.swift; sourceTree = "<group>"; };
+		FFCF9CE42CC2EA2D0015CBE0 /* ReplyCountCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyCountCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFDA43AD2CE8A238008AED83 /* ChattingSideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingSideMenuViewController.swift; sourceTree = "<group>"; };
+		FFDA43AF2CE8A423008AED83 /* ChattingSideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingSideMenuNavigationController.swift; sourceTree = "<group>"; };
+		FFDA43B12CE8DB04008AED83 /* ChattingSideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingSideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		FFE1D4602C8F0E6100A8F4AA /* FestiMeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FestiMeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE1D4632C8F0E6100A8F4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FFE1D4652C8F0E6100A8F4AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FFE1D4672C8F0E6100A8F4AA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FFE1D46C2C8F0E6200A8F4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFE1D46F2C8F0E6200A8F4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFE1D4712C8F0E6200A8F4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE1D4852C8F20EF00A8F4AA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FFE8BF452CABFD9D007F3BE9 /* FestivalDetailImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		FFE8BF472CAC0495007F3BE9 /* FestivalDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailViewModel.swift; sourceTree = "<group>"; };
+		FFE8BF492CAC05CE007F3BE9 /* FestivalImageAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalImageAPIService.swift; sourceTree = "<group>"; };
+		FFE8BF4B2CAC0909007F3BE9 /* FestivalImageJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalImageJSON.swift; sourceTree = "<group>"; };
+		FFE8BF4F2CAC62AF007F3BE9 /* FestivalDetailAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailAPIService.swift; sourceTree = "<group>"; };
+		FFE8BF512CAC64F2007F3BE9 /* FestivalDetailJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDetailJSON.swift; sourceTree = "<group>"; };
+		FFE8BF532CAC70CF007F3BE9 /* FestivalIntroAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalIntroAPIService.swift; sourceTree = "<group>"; };
+		FFE8BF552CAC717E007F3BE9 /* FestivalIntroJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalIntroJSON.swift; sourceTree = "<group>"; };
+		FFE8BF572CAC85E0007F3BE9 /* Extension_UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UILabel.swift; sourceTree = "<group>"; };
+		FFF2EE902CB956E2009BDBC9 /* CommunityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityDetailViewController.swift; sourceTree = "<group>"; };
+		FFFD36DB2CDA349F00801BC2 /* ChattingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingViewModel.swift; sourceTree = "<group>"; };
+		FFFEED4E2C908C8E00A2EF08 /* FestivalTogether.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FestivalTogether.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFE1D45D2C8F0E6100A8F4AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFDAE0862D1301DE00225070 /* FirebaseMessaging in Frameworks */,
+				FFE1D48B2C8F235700A8F4AA /* GoogleSignIn in Frameworks */,
+				FF59A7CD2CCB864400D30E22 /* FirebaseAuth in Frameworks */,
+				FFE1D48D2C8F235700A8F4AA /* GoogleSignInSwift in Frameworks */,
+				FF59A7C82CCB7F2900D30E22 /* FirebaseStorage in Frameworks */,
+				FF6074332D15DC6100044452 /* OAuth2 in Frameworks */,
+				FF59A7CF2CCB864400D30E22 /* FirebaseCore in Frameworks */,
+				FF59A7D32CCB864400D30E22 /* FirebaseStorage in Frameworks */,
+				7B19CBDB2ED5675AB0DDDFB0 /* Pods_FestivalTogether.framework in Frameworks */,
+				FF59A7D12CCB864400D30E22 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69A8EEFFDE49F048B350A107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B4F067E4E2F129D79219B9D /* Pods_FestivalTogether.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91A0BC9BECACB56414715967 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB2057E39310F5C4718A4740 /* Pods-FestivalTogether.debug.xcconfig */,
+				CD8521E33D42D9B338BD29D5 /* Pods-FestivalTogether.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF03DE342C959D94000F6E60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF03DE352C959DEB000F6E60 /* Extension_UIImage.swift */,
+				FF9830AD2CC4D89D00F34850 /* Extension_UIViewController.swift */,
+				FFE8BF572CAC85E0007F3BE9 /* Extension_UILabel.swift */,
+				FF03DE372C95A1B7000F6E60 /* Extension_UIColor.swift */,
+				FF852B972CA414E400F4B8D7 /* Extension_UIFont.swift */,
+				FF6E39552CAF0A990031213B /* Extension_String.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF4D50982D380B3A008FC254 /* Festival */ = {
+			isa = PBXGroup;
+			children = (
+				FF88F86B2D46A2FC003AE404 /* FestivalSeviceKey.swift */,
+				FFC49C232CA7265C009D8683 /* FestivalAPIService.swift */,
+				FF99079F2CAA853500EF185D /* AreaCodeAPIService.swift */,
+				FFE8BF492CAC05CE007F3BE9 /* FestivalImageAPIService.swift */,
+				FFE8BF4F2CAC62AF007F3BE9 /* FestivalDetailAPIService.swift */,
+				FFE8BF532CAC70CF007F3BE9 /* FestivalIntroAPIService.swift */,
+			);
+			path = Festival;
+			sourceTree = "<group>";
+		};
+		FF4D50992D380B61008FC254 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FF6481AF2CB6B115005C9363 /* FirebaseFirestoreService.swift */,
+				FF6074372D17067000044452 /* FirebaseCloudMessagingService.swift */,
+				FF59A7C52CCB7A7900D30E22 /* FirebaseStorageService.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		FF4D509A2D380DF3008FC254 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF72A39C2CA1648300AD46EC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF4D509B2D380E02008FC254 /* FestivalInformation */ = {
+			isa = PBXGroup;
+			children = (
+				FF4CBC0A2CA5C53400D55A60 /* FestivalListViewController.swift */,
+				FFC49C202CA6CC8B009D8683 /* FestivalTableViewCell.swift */,
+				FF6F50732CAD6A2B00626A2A /* FestivalSearchViewController.swift */,
+				FF6F50772CAD9DB500626A2A /* FestivalSearchTableViewCell.swift */,
+				FF6F50752CAD981100626A2A /* FestivalSearchResultViewController.swift */,
+				FF9907A12CAAD00300EF185D /* FestivalDetailViewController.swift */,
+				FFE8BF452CABFD9D007F3BE9 /* FestivalDetailImageCollectionViewCell.swift */,
+				FF6E39572CAFA2920031213B /* ImageDetailViewController.swift */,
+				FF6E39592CAFA2C80031213B /* ImageDetailCollectionViewCell.swift */,
+			);
+			path = FestivalInformation;
+			sourceTree = "<group>";
+		};
+		FF4D509C2D380E24008FC254 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				FF5DF0F92CB3AD69004153DA /* CommunityViewController.swift */,
+				FF5DF0FF2CB3D531004153DA /* CommunityTableViewCell.swift */,
+				FFF2EE902CB956E2009BDBC9 /* CommunityDetailViewController.swift */,
+				FFCF9CE22CC2E56F0015CBE0 /* PostCollectionReusableView.swift */,
+				FFCF9CE42CC2EA2D0015CBE0 /* ReplyCountCollectionViewCell.swift */,
+				FF1A65622CC0EC7D00B0B789 /* ReplyCollectionReusableView.swift */,
+				FF321DB42CBE31800079A388 /* ReplyCommentCollectionViewCell.swift */,
+				FFAAEAF22CC7C729004248E2 /* CommunitySearchViewController.swift */,
+				FFAAEAF62CC7F5C1004248E2 /* CommunitySearchResultViewController.swift */,
+				FF05CDF42D2F23D200C3806E /* NotificationViewController.swift */,
+				FF05CDF62D2F251B00C3806E /* NotificationTableViewCell.swift */,
+				FF5DF1012CB40EE3004153DA /* CommunityWritingViewController.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		FF4D509D2D380E47008FC254 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				FF5DF0FB2CB3AF5D004153DA /* ChattingListViewController.swift */,
+				FF9C937D2CD3CEB9007A1E2C /* ChattingListTableViewCell.swift */,
+				FF63947D2CD8F2A400BC2EF4 /* ChattingViewController.swift */,
+				FF63947F2CD8FACC00BC2EF4 /* ChattingTableViewCell.swift */,
+				FFDA43AD2CE8A238008AED83 /* ChattingSideMenuViewController.swift */,
+				FFDA43B12CE8DB04008AED83 /* ChattingSideMenuTableViewCell.swift */,
+				FFDA43AF2CE8A423008AED83 /* ChattingSideMenuNavigationController.swift */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		FF4D509E2D380E67008FC254 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				FF5DF0FD2CB3AFCE004153DA /* MyPageViewController.swift */,
+				FF59A7D42CCBCA1B00D30E22 /* MyPostViewController.swift */,
+				FF59A7D82CCBEDC100D30E22 /* MyReplyViewController.swift */,
+				FF59A7DA2CCBF10300D30E22 /* MyReplyTableViewCell.swift */,
+				FFE1D4672C8F0E6100A8F4AA /* SignInViewController.swift */,
+				FF321DB62CBED0B80079A388 /* NicknameSettingViewController.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		FF4D509F2D3810A7008FC254 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FF72A3A02CA1667E00AD46EC /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FF4D50A02D3810AF008FC254 /* FestivalInformation */ = {
+			isa = PBXGroup;
+			children = (
+				FFC49C252CA73952009D8683 /* FestivalListViewModel.swift */,
+				FF6F50792CADA58300626A2A /* FestivalSearchViewModel.swift */,
+				FF6E39532CAEC3510031213B /* FestivalSearchResultViewModel.swift */,
+				FFE8BF472CAC0495007F3BE9 /* FestivalDetailViewModel.swift */,
+			);
+			path = FestivalInformation;
+			sourceTree = "<group>";
+		};
+		FF4D50A12D3810CC008FC254 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				FF6481A52CB64411005C9363 /* CommunityViewModel.swift */,
+				FF1A65602CC03DBC00B0B789 /* CommunityDetailViewModel.swift */,
+				FFAAEAF42CC7C8D2004248E2 /* CommunitySearchResultViewModel.swift */,
+				FF05CDF82D2F4A1C00C3806E /* NotificationViewModel.swift */,
+				FF6481B12CB7A2AA005C9363 /* CommunityWritingViewModel.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		FF4D50A22D3810E7008FC254 /* Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				FF325A822CD49C4800CB89DF /* ChattingListViewModel.swift */,
+				FFFD36DB2CDA349F00801BC2 /* ChattingViewModel.swift */,
+			);
+			path = Chatting;
+			sourceTree = "<group>";
+		};
+		FF4D50A32D3810FC008FC254 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				FF4068632CC8FC3600A28CE5 /* MyPageViewModel.swift */,
+				FF59A7D62CCBCFC100D30E22 /* MyPostViewModel.swift */,
+				FF59A7DC2CCBF8FE00D30E22 /* MyReplyViewModel.swift */,
+				FFE1D4852C8F20EF00A8F4AA /* SignInViewModel.swift */,
+				FF321DB82CBEED580079A388 /* NicknameSettingViewModel.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		FF6074342D16EC8100044452 /* FCM */ = {
+			isa = PBXGroup;
+			children = (
+				FF6074352D16ECE400044452 /* ServiceAccount.json */,
+			);
+			path = FCM;
+			sourceTree = "<group>";
+		};
+		FF852B912CA4116900F4B8D7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FF852B992CA42C1900F4B8D7 /* NanumSquareRoundOTFB.otf */,
+				FF852B9A2CA42C1900F4B8D7 /* NanumSquareRoundOTFEB.otf */,
+				FF852B9B2CA42C1900F4B8D7 /* NanumSquareRoundOTFL.otf */,
+				FF852B9C2CA42C1900F4B8D7 /* NanumSquareRoundOTFR.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FF852B922CA4117B00F4B8D7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FFE1D46C2C8F0E6200A8F4AA /* Assets.xcassets */,
+				FFA1EB422D3319760060DA91 /* Animation */,
+				FF6074342D16EC8100044452 /* FCM */,
+				FF852B912CA4116900F4B8D7 /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FFA1EB422D3319760060DA91 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				FFA1EB432D3319980060DA91 /* fireworksAnimation.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		FFC49C222CA72607009D8683 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FF4D50982D380B3A008FC254 /* Festival */,
+				FF4D50992D380B61008FC254 /* Firebase */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FFE1D4572C8F0E6100A8F4AA = {
+			isa = PBXGroup;
+			children = (
+				FFE1D4622C8F0E6100A8F4AA /* FestivalTogether */,
+				FFE1D4612C8F0E6100A8F4AA /* Products */,
+				91A0BC9BECACB56414715967 /* Pods */,
+				69A8EEFFDE49F048B350A107 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FFE1D4612C8F0E6100A8F4AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFE1D4602C8F0E6100A8F4AA /* FestiMeet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFE1D4622C8F0E6100A8F4AA /* FestivalTogether */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEED4E2C908C8E00A2EF08 /* FestivalTogether.entitlements */,
+				FFE1D4632C8F0E6100A8F4AA /* AppDelegate.swift */,
+				FFE1D4652C8F0E6100A8F4AA /* SceneDelegate.swift */,
+				FFA1EB472D3373DB0060DA91 /* Settings.bundle */,
+				FFC49C222CA72607009D8683 /* Service */,
+				FFE1D4842C8F1E7700A8F4AA /* Model */,
+				FFE1D4822C8F1E5600A8F4AA /* View */,
+				FFE1D4832C8F1E7000A8F4AA /* ViewModel */,
+				FF03DE342C959D94000F6E60 /* Extension */,
+				FFE1D46E2C8F0E6200A8F4AA /* LaunchScreen.storyboard */,
+				FFC110862D361D6800581552 /* GoogleService-Info.plist */,
+				FFE1D4712C8F0E6200A8F4AA /* Info.plist */,
+				FF88F8692D469667003AE404 /* APIKeys.xcconfig */,
+				FF852B922CA4117B00F4B8D7 /* Resource */,
+			);
+			path = FestivalTogether;
+			sourceTree = "<group>";
+		};
+		FFE1D4822C8F1E5600A8F4AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFA1EB452D33220C0060DA91 /* LaunchScreenViewController.swift */,
+				FF72A3A22CA1B1C100AD46EC /* TabBarController.swift */,
+				FF4D509A2D380DF3008FC254 /* Home */,
+				FF4D509B2D380E02008FC254 /* FestivalInformation */,
+				FF4D509C2D380E24008FC254 /* Community */,
+				FF4D509D2D380E47008FC254 /* Chatting */,
+				FF4D509E2D380E67008FC254 /* MyPage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFE1D4832C8F1E7000A8F4AA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF4D509F2D3810A7008FC254 /* Home */,
+				FF4D50A02D3810AF008FC254 /* FestivalInformation */,
+				FF4D50A12D3810CC008FC254 /* Community */,
+				FF4D50A22D3810E7008FC254 /* Chatting */,
+				FF4D50A32D3810FC008FC254 /* MyPage */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFE1D4842C8F1E7700A8F4AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FF72A39A2CA15E5100AD46EC /* FestivalJSON.swift */,
+				FF99079B2CAA826700EF185D /* AreaCodeJSON.swift */,
+				FFE8BF4B2CAC0909007F3BE9 /* FestivalImageJSON.swift */,
+				FFE8BF512CAC64F2007F3BE9 /* FestivalDetailJSON.swift */,
+				FFE8BF552CAC717E007F3BE9 /* FestivalIntroJSON.swift */,
+				FF72A39E2CA1659F00AD46EC /* NaverSignIn.swift */,
+				FF6481A72CB64BAA005C9363 /* User.swift */,
+				FF35A3132D2DB6A20007EC21 /* UserNotification.swift */,
+				FF6481A92CB65346005C9363 /* Post.swift */,
+				FF6481AB2CB655E1005C9363 /* Reply.swift */,
+				FF6481AD2CB660CB005C9363 /* ReplyComment.swift */,
+				FF9C937B2CD36AD3007A1E2C /* Chatting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFE1D45F2C8F0E6100A8F4AA /* FestivalTogether */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE1D4742C8F0E6200A8F4AA /* Build configuration list for PBXNativeTarget "FestivalTogether" */;
+			buildPhases = (
+				28E05837E67F85188C2ACA53 /* [CP] Check Pods Manifest.lock */,
+				FFE1D45C2C8F0E6100A8F4AA /* Sources */,
+				FFE1D45D2C8F0E6100A8F4AA /* Frameworks */,
+				FFE1D45E2C8F0E6100A8F4AA /* Resources */,
+				E1A90794D93738178BE103BC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FestivalTogether;
+			packageProductDependencies = (
+				FFE1D48A2C8F235700A8F4AA /* GoogleSignIn */,
+				FFE1D48C2C8F235700A8F4AA /* GoogleSignInSwift */,
+				FF59A7C72CCB7F2900D30E22 /* FirebaseStorage */,
+				FF59A7CC2CCB864400D30E22 /* FirebaseAuth */,
+				FF59A7CE2CCB864400D30E22 /* FirebaseCore */,
+				FF59A7D02CCB864400D30E22 /* FirebaseFirestore */,
+				FF59A7D22CCB864400D30E22 /* FirebaseStorage */,
+				FFDAE0852D1301DE00225070 /* FirebaseMessaging */,
+				FF6074322D15DC6100044452 /* OAuth2 */,
+			);
+			productName = FestivalTogether;
+			productReference = FFE1D4602C8F0E6100A8F4AA /* FestiMeet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFE1D4582C8F0E6100A8F4AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					FFE1D45F2C8F0E6100A8F4AA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = FFE1D45B2C8F0E6100A8F4AA /* Build configuration list for PBXProject "FestivalTogether" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ko,
+			);
+			mainGroup = FFE1D4572C8F0E6100A8F4AA;
+			packageReferences = (
+				FFE1D4892C8F235700A8F4AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FF6074312D15DC6100044452 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */,
+			);
+			productRefGroup = FFE1D4612C8F0E6100A8F4AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFE1D45F2C8F0E6100A8F4AA /* FestivalTogether */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFE1D45E2C8F0E6100A8F4AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF852B9D2CA42C1900F4B8D7 /* NanumSquareRoundOTFEB.otf in Resources */,
+				FF6074362D16ECE400044452 /* ServiceAccount.json in Resources */,
+				FFA1EB482D3373DB0060DA91 /* Settings.bundle in Resources */,
+				FFA1EB442D3319980060DA91 /* fireworksAnimation.json in Resources */,
+				FF88F86A2D469667003AE404 /* APIKeys.xcconfig in Resources */,
+				FF852B9E2CA42C1900F4B8D7 /* NanumSquareRoundOTFB.otf in Resources */,
+				FF852B9F2CA42C1900F4B8D7 /* NanumSquareRoundOTFL.otf in Resources */,
+				FF852BA02CA42C1900F4B8D7 /* NanumSquareRoundOTFR.otf in Resources */,
+				FFC110872D361D6800581552 /* GoogleService-Info.plist in Resources */,
+				FFE1D46D2C8F0E6200A8F4AA /* Assets.xcassets in Resources */,
+				FFE1D4702C8F0E6200A8F4AA /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28E05837E67F85188C2ACA53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FestivalTogether-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1A90794D93738178BE103BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FestivalTogether/Pods-FestivalTogether-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FestivalTogether/Pods-FestivalTogether-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FestivalTogether/Pods-FestivalTogether-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFE1D45C2C8F0E6100A8F4AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1A65632CC0EC7D00B0B789 /* ReplyCollectionReusableView.swift in Sources */,
+				FF72A39F2CA1659F00AD46EC /* NaverSignIn.swift in Sources */,
+				FF6E39542CAEC3510031213B /* FestivalSearchResultViewModel.swift in Sources */,
+				FFF2EE912CB956E2009BDBC9 /* CommunityDetailViewController.swift in Sources */,
+				FF99079C2CAA826700EF185D /* AreaCodeJSON.swift in Sources */,
+				FF6F50782CAD9DB500626A2A /* FestivalSearchTableViewCell.swift in Sources */,
+				FFE1D4862C8F20EF00A8F4AA /* SignInViewModel.swift in Sources */,
+				FF59A7D52CCBCA1B00D30E22 /* MyPostViewController.swift in Sources */,
+				FFFD36DC2CDA349F00801BC2 /* ChattingViewModel.swift in Sources */,
+				FF9907A22CAAD00300EF185D /* FestivalDetailViewController.swift in Sources */,
+				FF6481AE2CB660CB005C9363 /* ReplyComment.swift in Sources */,
+				FFE8BF582CAC85E0007F3BE9 /* Extension_UILabel.swift in Sources */,
+				FF6394802CD8FACC00BC2EF4 /* ChattingTableViewCell.swift in Sources */,
+				FF5DF0FE2CB3AFCE004153DA /* MyPageViewController.swift in Sources */,
+				FFE8BF562CAC717E007F3BE9 /* FestivalIntroJSON.swift in Sources */,
+				FF6E39562CAF0A990031213B /* Extension_String.swift in Sources */,
+				FF6E39582CAFA2920031213B /* ImageDetailViewController.swift in Sources */,
+				FF63947E2CD8F2A400BC2EF4 /* ChattingViewController.swift in Sources */,
+				FF59A7C62CCB7A7900D30E22 /* FirebaseStorageService.swift in Sources */,
+				FF852B982CA414E400F4B8D7 /* Extension_UIFont.swift in Sources */,
+				FF88F86C2D46A300003AE404 /* FestivalSeviceKey.swift in Sources */,
+				FF35A3142D2DB6A20007EC21 /* UserNotification.swift in Sources */,
+				FFE8BF4C2CAC0909007F3BE9 /* FestivalImageJSON.swift in Sources */,
+				FF9907A02CAA853500EF185D /* AreaCodeAPIService.swift in Sources */,
+				FF5DF1022CB40EE3004153DA /* CommunityWritingViewController.swift in Sources */,
+				FF6F50742CAD6A2B00626A2A /* FestivalSearchViewController.swift in Sources */,
+				FF59A7DD2CCBF8FE00D30E22 /* MyReplyViewModel.swift in Sources */,
+				FFA1EB462D33220C0060DA91 /* LaunchScreenViewController.swift in Sources */,
+				FF72A3A32CA1B1C100AD46EC /* TabBarController.swift in Sources */,
+				FF59A7DB2CCBF10300D30E22 /* MyReplyTableViewCell.swift in Sources */,
+				FF03DE382C95A1B7000F6E60 /* Extension_UIColor.swift in Sources */,
+				FFDA43AE2CE8A238008AED83 /* ChattingSideMenuViewController.swift in Sources */,
+				FF6481A62CB64411005C9363 /* CommunityViewModel.swift in Sources */,
+				FF72A3A12CA1667E00AD46EC /* HomeViewModel.swift in Sources */,
+				FF6F50762CAD981100626A2A /* FestivalSearchResultViewController.swift in Sources */,
+				FF72A39B2CA15E5100AD46EC /* FestivalJSON.swift in Sources */,
+				FF6E395A2CAFA2C80031213B /* ImageDetailCollectionViewCell.swift in Sources */,
+				FF6481AA2CB65346005C9363 /* Post.swift in Sources */,
+				FF05CDF72D2F251B00C3806E /* NotificationTableViewCell.swift in Sources */,
+				FF72A39D2CA1648300AD46EC /* HomeViewController.swift in Sources */,
+				FF6481AC2CB655E1005C9363 /* Reply.swift in Sources */,
+				FF321DB52CBE31800079A388 /* ReplyCommentCollectionViewCell.swift in Sources */,
+				FFE1D4682C8F0E6100A8F4AA /* SignInViewController.swift in Sources */,
+				FF5DF1002CB3D531004153DA /* CommunityTableViewCell.swift in Sources */,
+				FF321DB72CBED0B80079A388 /* NicknameSettingViewController.swift in Sources */,
+				FFAAEAF72CC7F5C1004248E2 /* CommunitySearchResultViewController.swift in Sources */,
+				FF9830AE2CC4D89D00F34850 /* Extension_UIViewController.swift in Sources */,
+				FF6481B02CB6B115005C9363 /* FirebaseFirestoreService.swift in Sources */,
+				FF5DF0FC2CB3AF5D004153DA /* ChattingListViewController.swift in Sources */,
+				FF9C937E2CD3CEB9007A1E2C /* ChattingListTableViewCell.swift in Sources */,
+				FF6481B22CB7A2AA005C9363 /* CommunityWritingViewModel.swift in Sources */,
+				FF59A7D72CCBCFC100D30E22 /* MyPostViewModel.swift in Sources */,
+				FFE8BF542CAC70CF007F3BE9 /* FestivalIntroAPIService.swift in Sources */,
+				FF5DF0FA2CB3AD69004153DA /* CommunityViewController.swift in Sources */,
+				FFE8BF502CAC62AF007F3BE9 /* FestivalDetailAPIService.swift in Sources */,
+				FFE8BF522CAC64F2007F3BE9 /* FestivalDetailJSON.swift in Sources */,
+				FFE1D4642C8F0E6100A8F4AA /* AppDelegate.swift in Sources */,
+				FFC49C242CA7265C009D8683 /* FestivalAPIService.swift in Sources */,
+				FF4068642CC8FC3600A28CE5 /* MyPageViewModel.swift in Sources */,
+				FF59A7D92CCBEDC100D30E22 /* MyReplyViewController.swift in Sources */,
+				FF321DB92CBEED580079A388 /* NicknameSettingViewModel.swift in Sources */,
+				FF05CDF92D2F4A1C00C3806E /* NotificationViewModel.swift in Sources */,
+				FFDA43B22CE8DB04008AED83 /* ChattingSideMenuTableViewCell.swift in Sources */,
+				FF6074382D17067000044452 /* FirebaseCloudMessagingService.swift in Sources */,
+				FFE8BF4A2CAC05CE007F3BE9 /* FestivalImageAPIService.swift in Sources */,
+				FF325A832CD49C4800CB89DF /* ChattingListViewModel.swift in Sources */,
+				FFDA43B02CE8A423008AED83 /* ChattingSideMenuNavigationController.swift in Sources */,
+				FF6F507A2CADA58300626A2A /* FestivalSearchViewModel.swift in Sources */,
+				FFAAEAF32CC7C729004248E2 /* CommunitySearchViewController.swift in Sources */,
+				FFAAEAF52CC7C8D2004248E2 /* CommunitySearchResultViewModel.swift in Sources */,
+				FFCF9CE52CC2EA2D0015CBE0 /* ReplyCountCollectionViewCell.swift in Sources */,
+				FFCF9CE32CC2E56F0015CBE0 /* PostCollectionReusableView.swift in Sources */,
+				FF03DE362C959DEB000F6E60 /* Extension_UIImage.swift in Sources */,
+				FF9C937C2CD36AD3007A1E2C /* Chatting.swift in Sources */,
+				FFC49C262CA73952009D8683 /* FestivalListViewModel.swift in Sources */,
+				FF4CBC0B2CA5C53400D55A60 /* FestivalListViewController.swift in Sources */,
+				FF05CDF52D2F23D200C3806E /* NotificationViewController.swift in Sources */,
+				FF1A65612CC03DBC00B0B789 /* CommunityDetailViewModel.swift in Sources */,
+				FFE8BF482CAC0495007F3BE9 /* FestivalDetailViewModel.swift in Sources */,
+				FFE8BF462CABFD9D007F3BE9 /* FestivalDetailImageCollectionViewCell.swift in Sources */,
+				FFE1D4662C8F0E6100A8F4AA /* SceneDelegate.swift in Sources */,
+				FFC49C212CA6CC8B009D8683 /* FestivalTableViewCell.swift in Sources */,
+				FF6481A82CB64BAA005C9363 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FFE1D46E2C8F0E6200A8F4AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE1D46F2C8F0E6200A8F4AA /* Base */,
+				FFA4C7722C94C439001C53A3 /* ko */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFE1D4722C8F0E6200A8F4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF88F8692D469667003AE404 /* APIKeys.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FFE1D4732C8F0E6200A8F4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF88F8692D469667003AE404 /* APIKeys.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFE1D4752C8F0E6200A8F4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB2057E39310F5C4718A4740 /* Pods-FestivalTogether.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = FestivalTogether/FestivalTogether.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 5MSDRAJA97;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FestivalTogether/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "페스티밋";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "프로필 사진을 바꾸기 위해 사진 접근 권한이 필요합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.macnpc.FestivalTogether;
+				PRODUCT_NAME = FestiMeet;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FFE1D4762C8F0E6200A8F4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD8521E33D42D9B338BD29D5 /* Pods-FestivalTogether.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = FestivalTogether/FestivalTogether.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = 5MSDRAJA97;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FestivalTogether/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "페스티밋";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "프로필 사진을 바꾸기 위해 사진 접근 권한이 필요합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.macnpc.FestivalTogether;
+				PRODUCT_NAME = FestiMeet;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFE1D45B2C8F0E6100A8F4AA /* Build configuration list for PBXProject "FestivalTogether" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE1D4722C8F0E6200A8F4AA /* Debug */,
+				FFE1D4732C8F0E6200A8F4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE1D4742C8F0E6200A8F4AA /* Build configuration list for PBXNativeTarget "FestivalTogether" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE1D4752C8F0E6200A8F4AA /* Debug */,
+				FFE1D4762C8F0E6200A8F4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+		FF6074312D15DC6100044452 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleapis/google-auth-library-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.3;
+			};
+		};
+		FFE1D4892C8F235700A8F4AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF59A7C72CCB7F2900D30E22 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseStorage;
+		};
+		FF59A7CC2CCB864400D30E22 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FF59A7CE2CCB864400D30E22 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		FF59A7D02CCB864400D30E22 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FF59A7D22CCB864400D30E22 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		FF6074322D15DC6100044452 /* OAuth2 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF6074312D15DC6100044452 /* XCRemoteSwiftPackageReference "google-auth-library-swift" */;
+			productName = OAuth2;
+		};
+		FFDAE0852D1301DE00225070 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF59A7CB2CCB864400D30E22 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		FFE1D48A2C8F235700A8F4AA /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFE1D4892C8F235700A8F4AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		FFE1D48C2C8F235700A8F4AA /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFE1D4892C8F235700A8F4AA /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FFE1D4582C8F0E6100A8F4AA /* Project object */;
+}
