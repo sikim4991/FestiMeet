@@ -183,9 +183,10 @@ class FirebaseFirestoreService {
     ///Firestore에 User 필드 profileImageURLString 삭제
     func removeProfileImageURLString() {
         guard var currentUser = try? currentUserSubject.value() else { return }
+        guard let profileImageURLString = currentUser.profileImageURLString else { return }
         
         Task {
-            await FirebaseStorageService.shared.removeImage(profileImageURLString: currentUser.profileImageURLString ?? "")
+            await FirebaseStorageService.shared.removeImage(profileImageURLString: profileImageURLString)
             currentUser.profileImageURLString = nil
             
             do {
