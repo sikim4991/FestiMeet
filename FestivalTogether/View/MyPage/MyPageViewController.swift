@@ -7,6 +7,7 @@
 
 import UIKit
 import SafariServices
+import PhotosUI
 import RxSwift
 import RxCocoa
 
@@ -20,7 +21,8 @@ class MyPageViewController: UIViewController {
     
     private let profileContainerView = UIView()
     private let profileImageView = UIImageView()
-    private let imagePicker = UIImagePickerController()
+    private var imagePickerConfig = PHPickerConfiguration()
+    private lazy var imagePicker = PHPickerViewController(configuration: imagePickerConfig)
     private var nicknameAttributedString = AttributedString()
     private var nicknameChangeButtonConfig = UIButton.Configuration.plain()
     private let nicknameChangeButton = UIButton()
@@ -448,8 +450,11 @@ class MyPageViewController: UIViewController {
         }
         let pickImage = UIAlertAction(title: "앨범에서 선택", style: .default) { [weak self] _ in
             guard let self else { return }
-            self.imagePicker.sourceType = .photoLibrary
-            present(self.imagePicker, animated: true)
+            self.imagePickerConfig.filter = .images
+            self.imagePickerConfig.selectionLimit = 1
+            
+            self.present(self.imagePicker, animated: true)
+            
         }
         let cancelAction = UIAlertAction(title: "취소", style: .cancel)
         
@@ -553,12 +558,19 @@ extension MyPageViewController: UIGestureRecognizerDelegate {
     }
 }
 
-extension MyPageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension MyPageViewController: PHPickerViewControllerDelegate {
     //이미지 선택 시, 프로필 이미지 업로드
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            myPageViewModel.uploadProfileImage(image: image)
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+        if let itemProvider = results.map({ $0.itemProvider }).first {
+            if itemProvider.canLoadObject(ofClass: UIImage.self) {
+                itemProvider.loadObject(ofClass: UIImage.self) { [weak self] image, error in
+                    guard let image = image as? UIImage else { return }
+                    
+                    self?.myPageViewModel.uploadProfileImage(image: image)
+                }
+            }
         }
-        dismiss(animated: true, completion: nil)
+        
+        picker.dismiss(animated: true)
     }
 }
