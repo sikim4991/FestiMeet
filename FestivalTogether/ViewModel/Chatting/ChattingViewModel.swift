@@ -146,14 +146,14 @@ class ChattingViewModel {
                 messageTextSubject
                     .take(1)
                     .subscribe(onNext: { [weak self] message in
-                        Task {
+                        Task { [weak self] in
                             guard let self else { return }
                             guard let otherId else { return }
                             let chattingId = UUID().uuidString
                             //채팅 데이터 생성, 저장, Push Notification 전송
                             await FirebaseFirestoreService.shared.setChattingMessageData(chatting: Chatting(id: chattingId, chattingName: "\(currentUser.nickname)", lastMessage: message, lastMessageDate: Date(), memberIds: [currentUser.id, otherId], members: [Member(userId: currentUser.id, nickname: currentUser.nickname, profileImageURLString: currentUser.profileImageURLString, startDate: Date(), lastReadDate: Date())]), message: Message(senderId: currentUser.id, senderDate: Date(), senderMessage: message ?? ""))
-                            await FirebaseCloudMessagingService.shared.sendPushNotificationAboutStartChatting(otherId: otherId, title: currentUser.nickname, body: "채팅방에 초대되었어요!")
-                            await self.fetchChatting(chattingId: chattingId)
+                            FirebaseCloudMessagingService.shared.sendPushNotificationAboutStartChatting(otherId: otherId, title: currentUser.nickname, body: "채팅방에 초대되었어요!")
+                            self.fetchChatting(chattingId: chattingId)
                         }
                     })
                     .disposed(by: disposeBag)
