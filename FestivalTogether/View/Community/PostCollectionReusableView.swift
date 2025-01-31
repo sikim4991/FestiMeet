@@ -55,11 +55,13 @@ class PostCollectionReusableView: UICollectionReusableView {
         
         //게시글 제목
         titleLabel.text = "Title"
+        titleLabel.numberOfLines = 0
         titleLabel.font = .mainFontBold(size: 15.0)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         //게시글 내용
         detailLabel.text = "Detail"
+        detailLabel.numberOfLines = 0
         detailLabel.font = .mainFontRegular(size: 12.0)
         detailLabel.translatesAutoresizingMaskIntoConstraints = false
         

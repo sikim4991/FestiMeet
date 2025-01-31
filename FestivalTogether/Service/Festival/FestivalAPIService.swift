@@ -22,7 +22,8 @@ class FestivalAPIService {
     
     ///API를 통해 json형식의 데이터를 받아옴
     func fetchFestivalData() -> Observable<Data> {
-        return Observable.create() { emitter in
+        return Observable.create() { [weak self] emitter in
+            guard let self else { return Disposables.create() }
             self.dateFormatter.dateFormat = "yyyyMMdd"
             self.dateFormatter.locale = Locale(identifier: "ko_kr")
             self.dateFormatter.timeZone = TimeZone(abbreviation: "KST")

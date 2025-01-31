@@ -168,12 +168,14 @@ class FirebaseFirestoreService {
     
     ///Firestore에 User 필드 profileImageURLString 업데이트
     func updateProfileImageURLString(imageURLString: String) async {
-        var currentUser = try? currentUserSubject.value()
-        
-        currentUser?.profileImageURLString = imageURLString
-        
         do {
-            try await db.collection("User").document(currentUser?.id ?? "").updateData(["profileImageURLString" : imageURLString])
+            guard var currentUser = try currentUserSubject.value() else { return }
+            if let profileImageURLString = currentUser.profileImageURLString {
+                await FirebaseStorageService.shared.removeImage(profileImageURLString: profileImageURLString)
+            }
+            
+            currentUser.profileImageURLString = imageURLString
+            try await db.collection("User").document(currentUser.id).updateData(["profileImageURLString" : imageURLString])
             currentUserSubject.onNext(currentUser)
         } catch {
             print("Error: \(error)")
@@ -183,9 +185,10 @@ class FirebaseFirestoreService {
     ///Firestore에 User 필드 profileImageURLString 삭제
     func removeProfileImageURLString() {
         guard var currentUser = try? currentUserSubject.value() else { return }
+        guard let profileImageURLString = currentUser.profileImageURLString else { return }
         
         Task {
-            await FirebaseStorageService.shared.removeImage(profileImageURLString: currentUser.profileImageURLString ?? "")
+            await FirebaseStorageService.shared.removeImage(profileImageURLString: profileImageURLString)
             currentUser.profileImageURLString = nil
             
             do {
