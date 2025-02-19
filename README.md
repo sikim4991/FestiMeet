@@ -46,6 +46,14 @@ __같이 갈 친구들을 찾아봐요!__
 
 ## 구현 영상
 
+||||
+|:---:|:---:|:---:|
+||||
+||||
+||||
+||||
+||||
+
 <br>
 
 ## 이슈
@@ -55,5 +63,38 @@ __같이 갈 친구들을 찾아봐요!__
 ## 아키텍처
 
 __MVVM(Model-View-ViewModel)__ 디자인 패턴 적용
+```
+🗂FestivalTogether
+ ┣ 🗂FestivalTogether
+ ┃ ┣ 🗂Service
+ ┃ ┃ ┣ 🗂Festival
+ ┃ ┃ ┗ 🗂Firebase
+ ┃ ┣ 🗂Model
+ ┃ ┣ 🗂View
+ ┃ ┃ ┣ 🗂Home
+ ┃ ┃ ┣ 🗂FestivalInformation
+ ┃ ┃ ┣ 🗂Community
+ ┃ ┃ ┣ 🗂Chatting
+ ┃ ┃ ┗ 🗂MyPage
+ ┃ ┣ 🗂ViewControlelr
+ ┃ ┃ ┣ 🗂Home
+ ┃ ┃ ┣ 🗂FestivalInformation
+ ┃ ┃ ┣ 🗂Community
+ ┃ ┃ ┣ 🗂Chatting
+ ┃ ┃ ┗ 🗂MyPage
+ ┃ ┣ 🗂Extension
+ ┃ ┗ 🗂Resource
+ ┃   ┣ 🗂Animation
+ ┃   ┣ 🗂FCM
+ ┃   ┗ 🗂Fonts
+ ┣ 🗂Product
+ ┣ 🗂Pods
+ ┗ 🗂Frameworks
+🗂Pods
+ ┣ 🗂Frameworks
+ ┣ 🗂Pods
+ ┣ 🗂Product
+ ┗ 🗂Targets Support Files
+```
 
 ## 회고
