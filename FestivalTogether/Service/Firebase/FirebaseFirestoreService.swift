@@ -87,34 +87,20 @@ class FirebaseFirestoreService {
     
     ///Firestore의 User 데이터 삭제
     func removeUserData(completion: @escaping (Bool) -> Void) {
-        let user = Auth.auth().currentUser
-        
         //nil일 경우 재인증이 필요하단 뜻이라서 false 반환
-        guard let userId = user?.uid else {
+        guard let user = Auth.auth().currentUser else {
             completion(false)
             return
         }
         
-        db.collection("User").document(userId).collection("UserNotification").document().delete { [weak self] error in
+        user.delete { [weak self] error in
             if let error = error {
                 print("Error = \(error)")
                 completion(false)
             } else {
-                self?.db.collection("User").document(userId).delete { error in
-                    if let error = error {
-                        print("Error = \(error)")
-                        completion(false)
-                    } else {
-                        user?.delete { error in
-                            if let error = error {
-                                print("Error = \(error)")
-                                completion(false)
-                            } else {
-                                completion(true)
-                            }
-                        }
-                    }
-                }
+                self?.db.collection("User").document(user.uid).collection("UserNotification").document().delete()
+                self?.db.collection("User").document(user.uid).delete()
+                completion(true)
             }
         }
     }
